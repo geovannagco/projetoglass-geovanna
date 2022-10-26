@@ -1,7 +1,8 @@
 body {
   background-color: white;
-  color: #black;
+  color: black;
 }
+
 p {
   text-align: justify;
   text-indent: 50px;
@@ -55,11 +56,26 @@ nav#menu ul {
 
 nav#menu li {
   display: inline-block;
-  background-color: rgb(204, 203, 203);
+  background-color: #dddddd;
   padding: 10px;
   margin: 2px;
+  transition: background-color 1s;
+}
+
+nav#menu li:hover {
+  background-color: #606060;
 }
 
 nav#menu h1 {
   display: none;
+}
+
+nav#menu a {
+  color: #000000;
+  text-decoration: none;
+}
+
+nav#menu a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
