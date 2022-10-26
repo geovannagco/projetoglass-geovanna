@@ -1,6 +1,6 @@
 body {
-  background-color: #f0ffff;
-  color: #191971;
+  background-color: white;
+  color: #black;
 }
 p {
   text-align: justify;
@@ -37,4 +37,29 @@ figure.foto-legenda figcaption {
 
 figure.foto-legenda:hover figcaption {
   opacity: 100%;
+}
+
+/* Formatação do menu */
+
+nav#menu {
+  display: block;
+}
+
+nav#menu ul {
+  list-style: none;
+  text-transform: uppercase;
+  position: absolute;
+  top: -25px;
+  left: 320px;
+}
+
+nav#menu li {
+  display: inline-block;
+  background-color: rgb(204, 203, 203);
+  padding: 10px;
+  margin: 2px;
+}
+
+nav#menu h1 {
+  display: none;
 }
