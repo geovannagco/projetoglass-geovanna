@@ -5,8 +5,6 @@
   font-family: 'FonteLogo';
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;1,200&display=swap');
-
 header#cabecalho img#icone {
   position: absolute;
   left: 780px;
@@ -30,10 +28,10 @@ header#cabecalho h1 {
 
 header#cabecalho h2 {
   font-family: 'Titillium Web', sans-serif;
-  font-size: 20pt;
+  font-size: 16pt;
   color: #888888;
   padding: 0px;
-  margin-top: 0px;
+  margin-top: 8px;
 }
 
 body {
