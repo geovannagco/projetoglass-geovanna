@@ -133,6 +133,32 @@ section#corpo {
   padding-right: 15px;
 }
 
+/* Configuração Tabela*/
+table#tabelaespc {
+  border: 1px solid #606060;
+  border-spacing: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table#tabelaespc td {
+  border: 1px solid #606060;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+table#tabelaespec td.ce {
+  color: white;
+  background-color: #606060;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+table#tabelaespec td.cd {
+  color: #cecece;
+}
+
 /* Configuração Aside */
 aside#lateral {
   display: block;
