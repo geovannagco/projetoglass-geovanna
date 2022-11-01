@@ -222,6 +222,7 @@ aside#lateral {
   float: right;
   background-color: #dddddd;
   margin-top: 10px;
+  margin-right: 0px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -238,6 +239,11 @@ aside#lateral h2 {
   font-size: 13pt;
   color: white;
   padding: 5px;
+}
+
+aside#lateral p {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 /* Configuração Footer */
