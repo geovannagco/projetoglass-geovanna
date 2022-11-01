@@ -255,3 +255,19 @@ footer#rodape {
 footer#rodape p {
   text-align: center;
 }
+
+video#video1 {
+  display: block;
+  position: relative;
+  left: 40px;
+  top: -15px;
+  width: 450px;
+}
+
+video#video2 {
+  display: block;
+  position: relative;
+  right: 0px;
+  bottom: 2px;
+  width: 350px;
+}
