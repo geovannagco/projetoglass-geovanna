@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilos/style.css" />
-    <link rel="stylesheet" href="estilos/fotos.css"/>
+    <link rel="stylesheet" href="estilos/form.css"/>
     <title>Tudo sobre o Google Glass</title>
   </head>
   <script src="/_javascript/funcoes.js"></script>
+  <script>
+    function calc_total() {
+      var qtd = parseInt(document.getElementById('cQtd').value)
+      tot = qtd * 1500;
+      document.getElementById ('cTot').value = tot;
+    }
+  </script>
   <body>
     <div id="interface">
       <header id="cabecalho">
@@ -24,31 +31,31 @@
           <ul type="disc">
             <li
               onmouseover="mudaFoto('imagens/home.png')"
-              onmouseout="mudaFoto('imagens/fotos.png')"
+              onmouseout="mudaFoto('imagens/icone-contato.png)"
             >
               <a href="index.html">Home</a>
             </li>
             <li
               onmouseover="mudaFoto('imagens/especificacoes.png')"
-              onmouseout="mudaFoto('imagens/fotos.png')"
+              onmouseout="mudaFoto('imagens/icone-contato.png')"
             >
               <a href="specs.html">Especificações</a>
             </li>
             <li
               onmouseover="mudaFoto('imagens/fotos.png')"
-              onmouseout="mudaFoto('imagens/fotos.png')"
+              onmouseout="mudaFoto('imagens/icone-contato.png')"
             >
               <a href="fotos.html">Fotos</a>
             </li>
             <li
               onmouseover="mudaFoto('imagens/multimidia.png')"
-              onmouseout="mudaFoto('imagens/fotos.png')"
+              onmouseout="mudaFoto('imagens/icone-contato.png')"
             >
               <a href="multimidia.html">Multimídia</a>
             </li>
             <li
               onmouseover="mudaFoto('imagens/icone-contato.png')"
-              onmouseout="mudaFoto('imagens/fotos.png')"
+              onmouseout="mudaFoto('imagens/icone-contato.png')"
             >
               <a href="fale-conosco.html">Fale conosco</a>
             </li>
@@ -66,7 +73,7 @@
             </hgroup>
           </header> 
       
-    <form method="post" id="fContato" action="mailto:contato@cursoemvideo.com">
+    <form method="post" id="fContato" action="mailto:contato@cursoemvideo.com" oninput="calc_total();">
       
       <fieldset id="usuario"> 
       <legend>Identificação do Usuário</legend> 
@@ -111,13 +118,13 @@
       
       <fieldset id="pedido"> 
       <legend>Quero um Google Glass</legend> 
-      <p><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</legend></p> 
-      <p><label for="cCor">Cor:</label></p> 
-      <p><label for="cQtd">Quantidade:</label></p>
-      <p><label for="cTot">Preço Total: R$</label></p>
+      <p><input type="checkbox" name="tPed" id="cPed" checked> <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</legend></p> 
+      <p><label for="cCor">Cor:</label><input type="color" value="#6FB6F7"></p> 
+      <p><label for="cQtd">Quantidade:</label><input type="number" name="tQtd" id="cQtd" min="1" max="5" value="1"</p>
+      <p><label for="cTot">Preço Total: </label><input type="text" name="tTot" id="cTot" placeholder="Total a Pagar" readonly></p>
       </fieldset>
       <fieldset> 
-      [BOTÃO ENVIAR]
+      <input type="image" name="tEnviar" src="imagens/botao-enviar.png">
       </fieldset>
     </form>
       
